@@ -1,0 +1,89 @@
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">        
+        
+        <div class="error" *ngIf="isError && !isLoading">{{errorMessage}}</div>
+        
+        <div class="spinner">
+          <div>
+            <h2 *ngIf="isLoading">
+              Processing...
+            </h2>
+          </div>
+          <div>            
+            <mat-spinner class="spinner" 
+                          mode="indeterminate" 
+                          *ngIf="isLoading"                         
+                          diameter="40"
+                          style="float:right">
+            </mat-spinner>
+          </div>
+        </div>
+        
+        <form (ngSubmit)="onSubmit()" #f="ngForm">
+
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input
+                type="text"
+                id="firstName"
+                class="form-control"
+                ngModel
+                name="firstName"
+                required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  class="form-control"
+                  ngModel
+                  name="lastName"
+                  required>
+            </div>            
+            <div class="form-group">
+                <label for="AccountTypeId">Account Type</label>
+                <select
+                id="AccountTypeId"
+                class="form-control"
+                [ngModel]="defaultAccountType"
+                name="AccountTypeId">
+                    <option *ngFor="let accountType of accountTypes" 
+                      [value]="accountType.id">
+                        {{accountType.name}}
+                    </option>
+                </select>
+            </div>    
+            <div class="form-group">
+                <label for="balance">Balance Amount</label>
+                <input
+                  type="number"
+                  id="balance"
+                  class="form-control"
+                  ngModel
+                  name="balance"
+                  required>
+              </div>    
+              <div>
+                <button                    
+                    class="btn btn-dark mr-5"
+                    type="submit"
+                    [disabled]="!f.valid">Submit</button>
+                <button                    
+                    class="btn btn-dark mr-5"
+                    type="button"
+                    (click)="onReset()">
+                    Reset</button>
+                <button                    
+                    class="btn btn-dark mr-5"
+                    type="button"
+                    (click)="onBack()">
+                    Back</button>
+              </div>
+
+        </form>        
+      </div>
+    </div>    
+  </div>
+  

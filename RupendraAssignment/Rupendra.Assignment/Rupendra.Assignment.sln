@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rupendra.Assignment", "Rupendra.Assignment.csproj", "{D5DF11F9-4E96-4D20-84AF-A2B4DC1E18EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rupendra.Assignment.UnitTest", "..\Rupendra.Assignment.UnitTest\Rupendra.Assignment.UnitTest.csproj", "{66D30BF6-1DE9-4284-97E3-22D50835B6ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5DF11F9-4E96-4D20-84AF-A2B4DC1E18EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5DF11F9-4E96-4D20-84AF-A2B4DC1E18EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5DF11F9-4E96-4D20-84AF-A2B4DC1E18EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5DF11F9-4E96-4D20-84AF-A2B4DC1E18EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66D30BF6-1DE9-4284-97E3-22D50835B6ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66D30BF6-1DE9-4284-97E3-22D50835B6ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66D30BF6-1DE9-4284-97E3-22D50835B6ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66D30BF6-1DE9-4284-97E3-22D50835B6ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D293117-F807-454E-A9EF-2CA5623AF6EC}
+	EndGlobalSection
+EndGlobal

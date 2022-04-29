@@ -1,0 +1,9 @@
+<mat-form-field appearance="fill">
+  <mat-label>Account Type</mat-label>
+  <mat-select value="0" (selectionChange)="onAccountTypeChange($event)">
+    <mat-option value="0">All</mat-option>
+    <mat-option *ngFor="let accountType of accountTypes" [value]="accountType.id">
+      {{accountType.name}}
+    </mat-option>
+  </mat-select> 
+</mat-form-field>

@@ -1,0 +1,351 @@
+{
+	"info": {
+		"_postman_id": "0ddaab1c-fcf2-4155-beaf-748605d19d10",
+		"name": "AngloAmerican_Rupendra_Assignment ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44317/api/Accounts/GetAccounts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44317/api/Accounts/GetAccounts",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Accounts",
+						"GetAccounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Firstname is Blank",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"firstName\": \"\",\r\n        \"lastName\": \"NewUserSurname\",\r\n        \"accountTypeId\": 2,\r\n        \"balance\": 51000,\r\n        \"address\": \"JNPORT 9MR\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44317/api/Accounts/CreateAccount",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Accounts",
+						"CreateAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LastName is Blank",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"firstName\": \"kk\",\r\n        \"lastName\": \"\",\r\n        \"accountTypeId\": 1,\r\n        \"balance\": 40000,\r\n        \"address\": \"JNPORT 9MR\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44317/api/Accounts/CreateAccount",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Accounts",
+						"CreateAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AccountypeID is missing",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"firstName\": \"kk\",\r\n        \"lastName\": \"lastName\",\r\n        \"accountTypeId\": 0,\r\n        \"balance\": 40000,\r\n        \"address\": \"JNPORT 9MR\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44317/api/Accounts/CreateAccount",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Accounts",
+						"CreateAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Silver with correct balance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"firstName\": \"kk\",\r\n        \"lastName\": \"lastName\",\r\n        \"accountTypeId\": 1,\r\n        \"balance\": 40000,\r\n        \"address\": \"JNPORT 9MR\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44317/api/Accounts/CreateAccount",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Accounts",
+						"CreateAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Silver with not correct balance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"firstName\": \"kk\",\r\n        \"lastName\": \"lastName\",\r\n        \"accountTypeId\": 1,\r\n        \"balance\": 60000,\r\n        \"address\": \"JNPORT 9MR\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44317/api/Accounts/CreateAccount",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Accounts",
+						"CreateAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Brown with correct balance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"firstName\": \"kk\",\r\n        \"lastName\": \"lastName\",\r\n        \"accountTypeId\": 2,\r\n        \"balance\": 60000,\r\n        \"address\": \"JNPORT 9MR\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44317/api/Accounts/CreateAccount",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Accounts",
+						"CreateAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Brown with not correct balance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"firstName\": \"kk\",\r\n        \"lastName\": \"lastName\",\r\n        \"accountTypeId\": 2,\r\n        \"balance\": 40000,\r\n        \"address\": \"JNPORT 9MR\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44317/api/Accounts/CreateAccount",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Accounts",
+						"CreateAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gold with not correct balance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"firstName\": \"kk\",\r\n        \"lastName\": \"lastName\",\r\n        \"accountTypeId\": 3,\r\n        \"balance\": 40000,\r\n        \"address\": \"JNPORT 9MR\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44317/api/Accounts/CreateAccount",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Accounts",
+						"CreateAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gold with correct balance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"firstName\": \"kk\",\r\n        \"lastName\": \"lastName\",\r\n        \"accountTypeId\": 3,\r\n        \"balance\": 100001,\r\n        \"address\": \"JNPORT 9MR\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44317/api/Accounts/CreateAccount",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Accounts",
+						"CreateAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get GetAccounttype",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44317/api/Accounts/GetAccountTypes",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Accounts",
+						"GetAccountTypes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Account",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 44,\r\n    \"firstName\": \"update kk\",\r\n    \"lastName\": \"lastName\",\r\n    \"accountTypeId\": 1,\r\n    \"balance\": 40000,\r\n    \"address\": \"JNPORT 9MR\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44317/api/Accounts/UpdateAccount",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Accounts",
+						"UpdateAccount"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
